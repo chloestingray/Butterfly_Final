@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Demo - How to create a parallax scrolling website</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+		<link rel="author" href="https://plus.google.com/u/0/109859280204979591787/about"/>
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.7.1.min.js"></script>
+        <style type="text/css">
+			.back-link a {
+				color: #4ca340;
+				text-decoration: none; 
+                border-bottom: 1px #4ca340 solid;
+			}
+			.back-link a:hover,
+			.back-link a:focus {
+				color: #408536; 
+				text-decoration: none;
+				border-bottom: 1px #408536 solid;
+			}
+			h1 {
+				height: 100%;
+				/* The html and body elements cannot have any padding or margin. */
+				margin: 0;
+				font-size: 14px;
+				font-family: 'Open Sans', sans-serif;
+				color: #1c1d1e;
+				font-size: 32px;
+				margin-bottom: 3px;
+			}
+			h2 {
+				color: #1c1d1e;
+				font-weight: normal;
+			}
+			.entry-header .inner {
+				text-align: left;
+				margin: 0 auto 20px auto;
+				width: 800px;
+			}
+			.entry-header { padding-top: 20px; background-color: #fff; width:100%; position: fixed; top: 0; left: 0; z-index: 999999}
+		</style>
+    </head>
+    <body class="loading">
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+       	
+
+       	
+       	<main>
+       	 
+	        <section id="slide-1" class="homeSlide">
+	        	<div class="bcg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-1">
+		        	<div class="hsContainer">
+			    		<div class="hsContent header" data-500-top="opacity: 1" data-0-top="opacity: 0" data-anchor-target="#slide-1 h2" data-scroll-speed="1" class = "header-title">
+				    		<h2> Metamorphosis<br>The Life of a Caterpillar</h2>
+			    		</div>
+                        
+<!--                        <div class="hsContent header" data-500-top="opacity: 1" data-0-top="opacity: 0" data-anchor-target="#slide-1 h2" class ="header-caterpillar">-->
+<!--                            <img src="img/header-caterpillar.png">-->
+<!--                        </div>-->
+
+		        	</div>
+	        	</div>
+		    </section>
+		    
+<!--/*WE NEED SLIDE TWO BUT IS NOT BEING SHOWN */-->
+		    <section id="slide-2">
+		    	<div class="bcg" data-0="background-color:rgb(1,27,59);" data-top="background-color:(0,0,0);"  data-anchor-target="#slide-2">
+			    	<div class="hsContainer">
+			    		<div class="hsContent">
+				    		<h2 data-center="opacity: 1" data--50-bottom="opacity: 0" data-206-top="opacity: 1" data-56-top="opacity: 0" data-anchor-target="#slide-2 h2">blank</h2> 
+			    		</div>
+                        
+                        
+		        	</div>
+		    	</div>
+
+		    </section>
+<!--/*END OF SLIDE 2 */-->
+            
+		    <section id="slide-3" class="homeSlide">
+		    	<div class="bcg" data-0="background-color:rgb(1,27,59);" data-top="background-color:(0,0,0);"  data-anchor-target="#slide-2">
+			    	<div class="hsContainer">
+			    		<div class="hsContent">
+				    <h2 data-center="opacity: 1" data--10-bottom="opacity: 0" data-100-top="opacity: 1" data--100-top="opacity: 0"  data-anchor-target="#slide-3 h2" class="eggtxt">Egg Stage</h2>
+                            
+                            <div data-center="opacity: 1" data--10-bottom="opacity: 0" data-100-top="opacity: 1" data--100-top="opacity: 0"  data-anchor-target="#slide-3 h2" id="egg-stage-text-1">    <p> In the spring during the months of February and early March, the previous generation of butterflies come out of hibernation to find a mate. Once they find a mate, the eggs are laid. Monarch butterflies lay their eggs on the undersides of milkweed leaves.</p>
+                                
+                            </div>
+                            
+                            <div data-center="opacity: 1" data--10-bottom="opacity: 0" data-100-top="opacity: 1" data--100-top="opacity: 0"  data-anchor-target="#slide-3 h2" id="egg-stage-text-2">
+      <p>The egg is oval-shaped (much like that of a football) with little tiny lines of dots running down the sides. The egg takes between three to five days to hatch.</p>
+    </div>
+                            
+                            <div data-center="opacity: 1" data--10-bottom="opacity: 0" data-100-top="opacity: 1" data--100-top="opacity: 0"  data-anchor-target="#slide-3 h2" class="top-left-leaf">
+      <img src="img/leaf.png" alt="top-left-leaf">
+    </div>
+                    
+                            <div data-center="opacity: 1" data--10-bottom="opacity: 0" data-100-top="opacity: 1" data--100-top="opacity: 0"  data-anchor-target="#slide-3 h2" class="center-left-leaf">
+      <img src="img/leaf.png" alt="center-left-leaf">
+    </div>
+    <div data-center="opacity: 1" data--10-bottom="opacity: 0" data-100-top="opacity: 1" data--100-top="opacity: 0"  data-anchor-target="#slide-3 h2" class="bottom-left-leaf">
+      <img src="img/leaf.png" alt="bottom-left-leaf">
+    </div>
+    <div data-center="opacity: 1" data--10-bottom="opacity: 0" data-100-top="opacity: 1" data--100-top="opacity: 0"  data-anchor-target="#slide-3 h2"  class="top-right-leaf">
+      <img src="img/leaf.png" alt="top-right-leaf">
+    </div>
+    <div data-center="opacity: 1" data--10-bottom="opacity: 0" data-100-top="opacity: 1" data--100-top="opacity: 0"  data-anchor-target="#slide-3 h2"  class="center-right-leaf">
+      <img src="img/leaf.png" alt="center-right-leaf">
+    </div>
+    <div data-center="opacity: 1" data--10-bottom="opacity: 0" data-100-top="opacity: 1" data--100-top="opacity: 0"  data-anchor-target="#slide-3 h2"  class="bottom-right-leaf">
+      <img src="img/leaf.png" alt="bottom-right-leaf">
+    </div>
+    
+    <div data-center="opacity: 1" data--10-bottom="opacity: 0" data-100-top="opacity: 1" data--100-top="opacity: 0"  data-anchor-target="#slide-3 h2" class="egg">
+      <img src="img/egg.png" alt="egg">
+    </div>
+                            
+                            <div data-center="opacity: 1" data--10-bottom="opacity: 0" data-100-top="opacity: 1" data--100-top="opacity: 0"  data-anchor-target="#slide-3 h2" class="center-left-leaf-2">
+      <img src="img/leaf.png" alt="center-left-leaf">
+    </div>
+ 
+                            <div  data-center="opacity: 1" data--10-bottom="opacity: 0" data-100-top="opacity: 1" data--100-top="opacity: 0"  data-anchor-target="#slide-3 h2"  class="center-right-leaf-2">
+      <img src="img/leaf.png" alt="center-right-leaf-2">
+    </div>
+                            
+                               <div data-center="opacity: 1" data--10-bottom="opacity: 0" data-100-top="opacity: 1" data--100-top="opacity: 0"  data-anchor-target="#slide-3 h2"  class="top-right-leaf-2">
+      <img src="img/leaf.png" alt="top-right-leaf-2">
+    </div>
+			    		</div>
+		        	</div>
+		    	</div>
+
+		    </section>
+            
+            
+		    <section id="slide-4" class="homeSlide">
+		    	<div class="bcg" data-0="background-color:rgb(1,27,59);" data-top="background-color:(0,0,0);"  data-anchor-target="#slide-2">
+			    	<div class="hsContainer">
+			    		<div class="hsContent">
+                            <div data-center="opacity: 1" data--10-bottom="opacity: 0" data-206-top="opacity: 1" data-56-top="opacity: 0"   data-anchor-target="#slide-4 h2" class="caterpillar-header">
+				    <h2 >CaterPillar</h2>
+                        </div>
+                               <div data-center="opacity: 1" data--10-bottom="opacity: 0" data-206-top="opacity: 1" data-56-top="opacity: 0"   data-anchor-target="#slide-4 h2" class = "caterpillar-info">
+      <p>Caterpillars only eat one type of leaf, so it is important that the eggs are laid on the right type of leaf. Monarch Butterfly caterpillars eat milkweed leaves. </p>
+                            </div>
+                <div data-center="opacity: 1" data--10-bottom="opacity: 0" data-206-top="opacity: 1" data-56-top="opacity: 0"   data-anchor-target="#slide-4 h2" class = "caterpillar-info-2">
+      <p>Caterpillars need to eat a lot so they can grow quickly in order to turn into a butterfly.</p>
+                                    </div>
+                            
+                              <div  data-center="opacity: 1" data--10-bottom="opacity: 0" data-206-top="opacity: 1" data-56-top="opacity: 0"   data-anchor-target="#slide-4 h2" class ="grass-bottom-left">
+                             <img src="img/grass.png" alt = "grass bleft">
+                                </div>
+
+                       <div data-center="opacity: 1" data--10-bottom="opacity: 0" data-206-top="opacity: 1" data-56-top="opacity: 0"   data-anchor-target="#slide-4 h2" class ="grass-middle-left">
+                             <img src="img/grass.png" alt = "grass mdleft">
+                                </div>
+                       <div data-center="opacity: 1" data--10-bottom="opacity: 0" data-206-top="opacity: 1" data-56-top="opacity: 0"   data-anchor-target="#slide-4 h2" class ="grass-middle-right">
+                             <img src="img/grass.png" alt = "grass. mdright">
+                            </div>
+                       <div data-center="opacity: 1" data--10-bottom="opacity: 0" data-206-top="opacity: 1" data-56-top="opacity: 0"   data-anchor-target="#slide-4 h2" class ="grass-bottom-right">
+                             <img src="img/grass.png" alt = "grass btright">
+                            </div>
+                       <div data-center="opacity: 1" data--10-bottom="opacity: 0" data-206-top="opacity: 1" data-56-top="opacity: 0"   data-anchor-target="#slide-4 h2" class = "color-caterpillar">
+                         <img src="img/caterpillar-2.png" alt = "caterpillar">
+                            </div>
+
+                            
+			    		
+		        	</div>
+		    	</div>
+
+		    </section>
+            
+		    
+            
+		    <section id="slide-5" class="homeSlide">
+		    	<div class="bcg" data-0="background-color:rgb(1,27,59);" data-top="background-color:(0,0,0);"  data-anchor-target="#slide-2">
+			    	<div class="hsContainer">
+			    		<div class="hsContent">
+				    <h2 data-center="opacity: 1" data--10-bottom="opacity: 0" data-100-top="opacity: 1" data-10-top="opacity: 0" data-anchor-target="#slide-5 h2" id="cocoon-header">Cocoon Stage</h2>
+                            
+                            <div data-center="opacity: 1" data--10-bottom="opacity: 0" data-100-top="opacity: 1" data-10-top="opacity: 0" data-anchor-target="#slide-5 h2" id="cocoon-stage-text">
+      <p> After the caterpillar sheds it's skin for the last time, it enters the pupa stage. The caterpillar's skin becomes enveloped in a jade green casing called the chrysalis. This skin is about and inch thick and within an hour of being created, it hardens into a protective shell. It takes the caterpillar around 9 to 14 days to transform and once it does, the chrysalis cracks open and out comes a butterfly!</p>
+    </div>
+                <div  data-center="opacity: 1" data--10-bottom="opacity: 0" data-100-top="opacity: 1" data-16-top="opacity: 0" data-anchor-target="#slide-5 h2"  class="tree-branch">
+                        <img src="img/tree.png" alt="tree-branch">
+                    </div>
+                            
+                    <div  data-center="opacity: 1" data--10-bottom="opacity: 0" data-100-top="opacity: 1" data-15-top="opacity: 0" data-anchor-target="#slide-5 h2"  class="cocoon">
+                        <img src="img/cocoon.png">
+                    </div>
+                            
+			    		</div>
+		        	</div>
+		    	</div>
+
+		    </section>
+            
+		    <section id="slide-6" class="homeSlide">
+		    	<div class="bcg" data-0="background-color:rgb(1,27,59);" data-top="background-color:(0,0,0);"  data-anchor-target="#slide-2">
+			    	<div class="hsContainer">
+			    		<div class="hsContent">
+				    <h2 data-center="opacity: 1" data--10-bottom="opacity: 0" data-50-top="opacity: 1" data-10-top="opacity: 0" data-anchor-target="#slide-6 h2" id="butterfly-header">ButterFly Stage</h2>
+                            
+                            <div data-center="opacity: 1" data--10-bottom="opacity: 0" data-106-top="opacity: 1" data-56-top="opacity: 0" data-anchor-target="#slide-6 h2" id="butterfly-text"> <p> About an hour after emerging from its chrysalis, the monarch butterfly's wings are ready for flying. The butterfly uses its straw-like tongue (called a proboscis) to sip nectar from flowers. After 4 to 7 days, the monarch butterfly is old enough to mate. About an hour after emerging from its chrysalis, the monarch butterfly's wings are ready for flying. The butterfly uses its straw-like tongue (called a proboscis) to sip nectar from flowers. After 4 to 7 days, the monarch butterfly is old enough to mate. </p>
+                                
+                            </div>
+                        
+
+                                  <div data-center="opacity: 1" data--100-bottom="opacity: 0" data-106-top="opacity: 1" data-5-top="opacity: 0" data-anchor-target="#slide-6 h2" class="cloud">
+                                     <img src="img/cloud.png">
+                                   </div>
+                                  <div data-center="opacity: 1" data--10-bottom="opacity: 0" data-106-top="opacity: 1" data-56-top="opacity: 0" data-anchor-target="#slide-6 h2" class="butterfly-pic">
+                                     <img src="img/butterfly.png">
+                                   </div>
+                                   <div data-center="opacity: 1" data--10-bottom="opacity: 0" data-106-top="opacity: 1" data-56-top="opacity: 0" data-anchor-target="#slide-6 h2" class="cloud-2">
+                                     <img src="img/cloud.png">
+                                   </div>
+                            
+                        </div>
+                            
+			    		</div>
+		        	</div>
+		    	</div>
+
+		    </section>
+            
+                        
+		    <section id="slide-7" class="homeSlide">
+		    	<div class="bcg" data-0="background-color:rgb(0,27,59);" data-top="background-color:(255,255,255);"  data-anchor-target="#slide-2">
+			    	<div class="hsContainer">
+			    		<div class="hsContent">
+				    <h2 data-center="opacity: 1" data--10-bottom="opacity: 0" data-50-top="opacity: 1" data-10-top="opacity: 0"   data-anchor-target="#slide-7 h2" id="fun-fact-header">Did You Know?</h2>
+                            
+                            
+                             <div data-center="opacity: 1" data--10-bottom="opacity: 0" data-50-top="opacity: 1" data-10-top="opacity: 0" data-anchor-target="#slide-7 h2" class="fact_list">
+                         <ul>
+                           <li>The average lifespan of a butterfly is 12 months</li>
+                           <li>Butterflies cannot fly if their body temperature is less than 86 degrees.</li>
+                           <li>Monarch butterflies journey from the Great Lakes to the Gulf of Mexico (a distance of about 2,000 miles), returning to the North again in the spring.</li>
+                           <li> Among many other flowers, monarchs like to feed on clover flowers (pictured left).</li>
+                         </ul>
+                       </div>
+
+                        
+                        <div data-center="opacity: 1" data--10-bottom="opacity: 0" data-50-top="opacity: 1" data-10-top="opacity: 0"  data-anchor-target="#slide-7 h2" class="white-clover">
+     <img src="img/white-clover.png" alt="whtite-clover">
+                        </div>
+                            
+                             <div data-center="opacity: 1" data--10-bottom="opacity: 0" data-50-top="opacity: 1" data-10-top="opacity: 0"  data-anchor-target="#slide-7 h2" class="monarch">
+     <img src="img/monarch.png" alt="monarch">
+                            </div>
+			    		</div>
+		        	</div>
+		    	</div>
+
+		    </section>
+            <section id="slide-8" class="homeSlide homeSlide2">
+           	<div class="bcg" data-0="background-color:rgb(255,255,255);" data-top="background-color:(255,255,255);"  data-anchor-target="#slide-2">
+			    	<div class="hsContainer">
+				    	<div class="hsContent" data-100-bottom="opacity: 0;" data-bottom="opacity: 1;" data-anchor-target="#slide-5" >
+				    		<h2 class="the-final-gif">The End</h2>
+				    		<iframe src="http://giphy.com/embed/ZTtnMfBmhYm64?html5=true" width="480" height="240" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+			    		</div>
+			    	</div>
+		    	</div>
+            </section>
+		</main>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="js/imagesloaded.js"></script>
+        <script src="js/skrollr.js"></script>
+        <script src="js/_main.js"></script>
+
+    </body>
+</html>
